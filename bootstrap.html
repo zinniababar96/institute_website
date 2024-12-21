@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+		.col{
+			text-align: center;
+		}
+		.col-sm{
+			text-align: left;
+			background-color: white;
+		}
+		.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+		
+		.carousel-wrapper {
+  width: 1000px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  font-family: sans-serif;
+}
+.owl-carousel .owl-nav {
+  overflow: hidden;
+  height: 0px;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #5110e9;
+}
+
+.owl-carousel .item {
+  text-align: center;
+}
+.owl-carousel .nav-button {
+  height: 50px;
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 50px !important;
+}
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+  pointer-events: none;
+  opacity: 0.25;
+}
+.owl-carousel .owl-prev {
+  left: -35px;
+}
+.owl-carousel .owl-next {
+  right: -35px;
+}
+.owl-theme .owl-nav [class*=owl-] {
+  color: #ffffff;
+  font-size: 39px;
+  background: #000000;
+  border-radius: 3px;
+}
+.owl-carousel .prev-carousel:hover {
+  background-position: 0px -53px;
+}
+.owl-carousel .next-carousel:hover {
+  background-position: -24px -53px;
+}
+		
+	</style>
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">PNY Trainings</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse show" id="navbarDark">
+      <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="bootstrap.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="admissions.html">Admissions</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+<div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item">
+      <img src="slide1.jpg" class="d-block w-100" alt="Slide 1">
+    </div>
+    <div class="carousel-item active">
+      <img src="slide2.jpeg" class="d-block w-100" alt="Slide 2">
+    </div>
+    <div class="carousel-item">
+      <img src="slide2.jpeg" class="d-block w-100" alt="Slide 3">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselWithControls" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselWithControls" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+
+
+<br>
+
+<div class="container" style="background: lightgrey">
+	<br>
+	<h3 align="center">START LEARNING</h3>
+	<div class="container-fluid">
+		<div class="row d-flex justify-content-around">
+      <div class="row">
+  <div class="col-xxl-3">
+    <b> Development</b><br>
+Learn how to code, create, and build web or mobile applications, from the foundations of object-oriented programming in ...<br>
+<button type="button" class="btn btn-secondary">View Course</button>
+  </div>
+  <div class="col-xxl-5"> <b>Art & Design</b><br>
+    Whether you want to design a logo, create ebooks, or just learn how to use a Adobe tool, our in-depth design training co..<br>
+<button type="button" class="btn btn-secondary">View Course</button>
+  </div>
+  <div class="col-xxl-3"><b>Marketing</b><br>
+  Our marketing courses help you master in Digital Marketing marketing skills and the latest digital tools and techniques ...<br>
+<button type="button" class="btn btn-secondary">View Course</button></div>
+</div>
+  	
+  	<div class="col-xxl-4"><b>IT & Software</b><br>
+  Our IT and Software training helps you solve real-world practical computing issues and practice for certification exams...<br>
+<button type="button" class="btn btn-secondary">View Course</button></div>
+</div>
+
+<div class="col-xxl-5"><b>Business & Accounts</b><br>
+  The Business library is a better business school for professionals. It teaches you how to manage time and projects; be m....<br>
+<button type="button" class="btn btn-secondary">View Course</button></div>
+</div>
+
+<div class="col-xxl-4"><b>Multimedia</b><br>
+  Whether you want to be a photographer or just love taking pictures and making videos, learn what you need with our in-de....<br>
+<button type="button" class="btn btn-secondary">View Course</button></div>
+</div>
+
+<br>
+
+<div align="center">
+<button type="button" class="btn btn-secondary btn-sm">browse courses</button>
+</div>
+<br>
+</div>
+
+<br>
+
+<div class="container">
+    <div class="row">
+
+<div class="owl-carousel owl-theme" style="width: 70%; margin: auto;">
+    <div class="item">
+        <img src="images\1.jpg">        
+        <section style="text-align: center;">
+        <b>Image1</b> <br>
+        Details of This Course <br>
+        Fee: 10000 <br>
+        </section>
+    </div>
+    <div class="item">
+        <img src="images\2.png">
+        <section style="text-align: center;">
+        <b>Image2</b> <br>
+        Details of This Course <br>
+        Fee: 10000 <br>
+        </section>
+    </div>
+    <div class="item">
+        <img src="images\3.png">
+        <section style="text-align: center;">
+        <b>Image3</b> <br>
+        Details of This Course <br>
+        Fee: 10000 <br>
+        </section>
+    </div>
+    <div class="item">
+        <img src="images\4.jpg">
+        <section style="text-align: center;">
+        <b>Image4</b> <br>
+        Details of This Course <br>
+        Fee: 10000 <br>
+        </section>
+    </div>
+    <div class="item">
+        <img src="images\5.jpeg">
+        <section style="text-align: center;">
+        <b>Image5</b> <br>
+        Details of This Course <br>
+        Fee: 10000 <br>
+        </section>
+    </div>
+    <div class="item">
+        <img src="images\6.jpeg">
+        <section style="text-align: center;">
+        <b>Image6</b> <br>
+        Details of This Course <br>
+        Fee: 10000 <br>
+        </section>
+    </div>
+    <div class="item">
+        <img src="images\7.jpeg">
+        <section style="text-align: center;">
+        <b>Image7</b> <br>
+        Details of This Course <br>
+        Fee: 10000 <br>
+        </section>
+    </div>
+    <div class="item">
+        <img src="images\8.jpeg">
+        <section style="text-align: center;">
+        <b>Image8</b> <br>
+        Details of This Course <br>
+        Fee: 10000 <br>
+        </section>
+    </div>
+    <div class="item">
+        <img src="images\9.png">
+        <section style="text-align: center;">
+        <b>Image9</b> <br>
+        Details of This Course <br>
+        Fee: 10000 <br>
+        </section>
+    </div>
+    <div class="item">
+        <img src="images\10.png">
+        <section style="text-align: center;">
+        <b>Image10</b> <br>
+        Details of This Course <br>
+        Fee: 10000 <br>
+        </section>
+    </div>
+</div>
+
+</div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:20,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    stagepadding: 50,
+    nav:true,
+    dots: false,
+    navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+
+
+</script>
+
+<br><br>
+
+<h3 align="center">UPCOMING EVENTS</h3>
+
+
+<div class="row justify-content-md-center" style="background: lightgrey">
+  <div class="col col-lg-2" style="background: white">
+    <img src="slide2.jpeg" width="30%" height="30%">
+    Learn Python Programming with Django Framework From Scratch<br>
+May 28, 2022<br>
+     <a href="">Read more</a>
+  </div>
+  <div class="col col-lg-2" style="background: white">
+    <img src="slide2.jpeg" width="30%" height="30%">
+    Python Crash Course for Data Science<br>
+Apr 16, 2022<br>
+ <a href="">Read more</a>
+  </div><br>
+  <div class="col col-lg-2" style="background: white">
+    <img src="slide2.jpeg" width="30%" height="30%">
+    Big Data + Hadoop Ecosystem (Data Science)<br>
+Apr 16, 2022<br>
+ <a href="">Read more</a>
+  </div>
+</div>
+<br><br>
+
+<div align="center">
+<button type="button" class="btn btn-secondary btn-sm">View All Events</button>
+</div>
+<br><br>
+
+<h3 align="center">Our Trainers certified from</h3>
+
+PNY Trainings is the best IT institution in Lahore Pakistan that conducts different training programs aimed at helping young career seekers understand the basic information technology functioning of the sector and the job role they aspire to take on. Their insight and vision have assisted us to enhance the knowledge and skills of youngsters to take on modern-day corporate challenges. Getting a good start in a career is a cherished dream for every career candidate. However, this is easier said than done especially in today's challenging career range. To achieve this dream basic college education is rarely enough, especially in Pakistan. Today's highly competitive and demanding employment market is looking for only talented and skilled manpower with enough command on the information technology industry essentials. To make a mark you must have the necessary knowledge, skills, and capability to provide to the specific industry you aspire to enter into an increase. This is equally true across domains of Technology, Business, Development, and Designing, IT Software Development, Digital Marketing Courses, and many more.<br>
+
+One of the ways that you can gain an advantage over your contemporaries is to undergo courses offered by reputable training institutes in Lahore. There are so many seats available in Arfa tower short courses and all you have to do is to enroll yourself in your desired course. PNY Trainings offering different courses in Lahore, Islamabad, Rawalpindi, Karachi, and other major cities of Pakistan.<br>
+
+PNYTrainings is one of the promising and Best IT institute in Lahore that comes up with amazing courses, trainings, and much more. We are the introducers to numerous IT trends, courses, and certifications in Lahore. The motive of the PNY Arfa Tower short courses is to provide the best courses with guaranteed results for everyone.
+<br>
+with our weekend classes in Lahore, we are the only training institute that gives the opportunity to learn new skills to professionals and students. The flexible timings let them be the part of new industry trends and improve their skills to get better-paid jobs in our PNY Arfa Karim tower courses, For every single course we pay attention to the student ease and feasibility when it comes to classes schedule, timings, course duration, content, and teaching method.<br>
+
+PNYTrainings are one of the best online training institutes in Lahore Pakistan that are offering you the opportunity to learn new skills online. By accessing the online repository, you will be able to get the course and training from our qualified trainers and mentors. We have an organized system of teaching, coordination, and follow-up and course completion let you have the ultimate outcomes. ComputerArfa Karim tower courses are the key to your success.<br>
+
+When you are looking for the IT institute in Lahore that offers you, all the next level skill-based training then we are here. From our courses to their content and even the training session, everything is designed precisely. We pay attention to market need, demand, and future scope of the skills while offering a course. Every single course is an addition to your skillset that will repay you in the coming future.<br>
+
+<br><br>
+
+
+<h3 align="center">Become An Instructor</h3>
+<div align="center">
+<button type="button" class="btn btn-secondary btn-sm">Start Teaching</button>
+</div>
+
+<h3 align="center">PNY for Business</h3>
+<div align="center">
+<button type="button" class="btn btn-secondary btn-sm">Get PNY for Business</button>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-instagram"></a>
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+        eum harum corrupti dicta, aliquam sequi voluptate quas.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+</footer>
+<!-- Footer -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</body>
+</html>
